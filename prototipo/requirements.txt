@@ -1,0 +1,6 @@
+# Dependências do protótipo (Python >= 3.10). Verificado em 19/11/2026 com Python 3.14.10 e Streamlit 1.67.0.
+streamlit>=1.67         # st.navigation(position="top"), alertas com title= e AppTest com envio de arquivo
+catboost>=1.2           # modelo gerado e verificado com 1.2.10
+altair>=5               # gráficos (também instalado como dependência do Streamlit)
+pandas>=2.1             # Styler.map (coloração da coluna de nível)
+numpy>=1.26

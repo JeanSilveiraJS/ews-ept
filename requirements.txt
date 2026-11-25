@@ -1,0 +1,7 @@
+# Dependências do notebook modelagem_evasao.ipynb (no Google Colab, o próprio notebook instala o CatBoost).
+catboost==1.2.10
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+matplotlib>=3.8
+jupyter

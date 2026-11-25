@@ -1,0 +1,18 @@
+# Artigo e material de apresentação (mantidos fora do repositório)
+artigo/
+apresentacao/
+
+# Microdados da PNP (baixados da fonte; ver dados/LEIA-ME.md)
+dados/*.csv.gz
+
+# Saídas temporárias do notebook e do CatBoost
+resultados.zip
+catboost_info/
+
+# Python e Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# Ambiente local
+.claude/
+desktop.ini

@@ -1,0 +1,70 @@
+{
+  "colunas": [
+    "Sexo",
+    "Tipo de Deficiencia",
+    "Eixo Tecnológico",
+    "Subeixo Tecnológico",
+    "Nome de Curso",
+    "Tipo de Oferta",
+    "Modalidade de Ensino",
+    "Turno",
+    "Fonte de Financiamento",
+    "Programa Associado",
+    "Instituição",
+    "Unidade de Ensino",
+    "UF",
+    "Idade_Inicio_Estimada",
+    "Carga Horaria",
+    "Carga Horaria Mínima",
+    "Fator Esforço Curso",
+    "Total de Inscritos",
+    "Vagas Ofertadas",
+    "Vagas Regulares AC",
+    "Duracao_Ciclo_Dias"
+  ],
+  "categoricas": [
+    "Sexo",
+    "Tipo de Deficiencia",
+    "Eixo Tecnológico",
+    "Subeixo Tecnológico",
+    "Nome de Curso",
+    "Tipo de Oferta",
+    "Modalidade de Ensino",
+    "Turno",
+    "Fonte de Financiamento",
+    "Programa Associado",
+    "Instituição",
+    "Unidade de Ensino",
+    "UF"
+  ],
+  "numericas": [
+    "Idade_Inicio_Estimada",
+    "Carga Horaria",
+    "Carga Horaria Mínima",
+    "Fator Esforço Curso",
+    "Total de Inscritos",
+    "Vagas Ofertadas",
+    "Vagas Regulares AC",
+    "Duracao_Ciclo_Dias"
+  ],
+  "grupos": {
+    "estudante": [
+      "Sexo",
+      "Tipo de Deficiencia",
+      "Idade_Inicio_Estimada"
+    ],
+    "instituicao": [
+      "Instituição",
+      "Unidade de Ensino",
+      "UF"
+    ]
+  },
+  "limiares": {
+    "medio": 0.3,
+    "alto": 0.7
+  },
+  "ref_idade": "2025-12-31",
+  "modelo": "CatBoost, cursos técnicos, 21 atributos disponíveis no ingresso",
+  "fonte": "Microdados de Eficiência Acadêmica da PNP, ano-base 2025",
+  "observacao": "Escore não calibrado; níveis experimentais; avaliação retrospectiva."
+}

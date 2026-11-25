@@ -1,0 +1,170 @@
+{
+  "dados": {
+    "arquivo": "microdados_eficiencia_academica_2025.csv.gz",
+    "sha256": "18e9ad28b486c4793ce41f92e7b113c8a931aff522673707614db35687f00bed"
+  },
+  "populacao": {
+    "matriculas": 146345,
+    "turmas": 4118,
+    "evasao_pct": 46.29
+  },
+  "particoes": {
+    "Treino": {
+      "matrículas": 102950,
+      "turmas": 2882,
+      "evadidos (%)": 46.8
+    },
+    "Validação": {
+      "matrículas": 22080,
+      "turmas": 618,
+      "evadidos (%)": 46.5
+    },
+    "Teste": {
+      "matrículas": 21315,
+      "turmas": 618,
+      "evadidos (%)": 43.4
+    }
+  },
+  "modelo": {
+    "arvores": 262,
+    "atributos": 21,
+    "parametros": {
+      "iterations": 800,
+      "learning_rate": 0.05,
+      "depth": 6,
+      "loss_function": "Logloss",
+      "auto_class_weights": "Balanced",
+      "random_seed": 42,
+      "thread_count": 4
+    }
+  },
+  "metricas": {
+    "Treino": {
+      "ROC-AUC": 0.7979,
+      "AP": 0.7676,
+      "acurácia": 0.722,
+      "precisão": 0.6793,
+      "revocação": 0.77,
+      "F1": 0.7218
+    },
+    "Validação": {
+      "ROC-AUC": 0.7639,
+      "AP": 0.7224,
+      "acurácia": 0.6973,
+      "precisão": 0.6505,
+      "revocação": 0.7558,
+      "F1": 0.6992
+    },
+    "Teste": {
+      "ROC-AUC": 0.7668,
+      "AP": 0.7097,
+      "acurácia": 0.7085,
+      "precisão": 0.6524,
+      "revocação": 0.7044,
+      "F1": 0.6774
+    }
+  },
+  "matriz_confusao_teste": {
+    "Sem alerta": {
+      "Concluiu": 8579,
+      "Evadiu": 2738
+    },
+    "Com alerta": {
+      "Concluiu": 3475,
+      "Evadiu": 6523
+    }
+  },
+  "comparacao_modelos": {
+    "1. Sem modelo": {
+      "ROC-AUC": 0.5,
+      "AP": 0.4345,
+      "ROC-AUC dentro da unidade": 0.5
+    },
+    "2. Regra simples (taxa do tipo de oferta)": {
+      "ROC-AUC": 0.6799,
+      "AP": 0.562,
+      "ROC-AUC dentro da unidade": 0.5551
+    },
+    "3. Regressão logística": {
+      "ROC-AUC": 0.7395,
+      "AP": 0.6794,
+      "ROC-AUC dentro da unidade": 0.585
+    },
+    "4. CatBoost (modelo final)": {
+      "ROC-AUC": 0.7668,
+      "AP": 0.7097,
+      "ROC-AUC dentro da unidade": 0.6405
+    }
+  },
+  "uso_na_unidade": {
+    "Todas as matrículas de teste": {
+      "matrículas": 21315,
+      "evadidos (%)": 43.4483,
+      "unidades avaliadas": 282,
+      "ROC-AUC (teste inteiro)": 0.7668,
+      "ROC-AUC dentro da unidade": 0.6405
+    },
+    "Só cadastro completo": {
+      "matrículas": 6417,
+      "evadidos (%)": 24.6688,
+      "unidades avaliadas": 66,
+      "ROC-AUC (teste inteiro)": 0.7948,
+      "ROC-AUC dentro da unidade": 0.7002
+    }
+  },
+  "campos_nao_informados_pct": {
+    "Forma de ingresso": {
+      "concluintes (%)": 11.7,
+      "evadidos (%)": 44.1,
+      "diferença na mesma turma (p.p.)": 38.3
+    },
+    "Identidade de Gênero": {
+      "concluintes (%)": 48.0,
+      "evadidos (%)": 67.2,
+      "diferença na mesma turma (p.p.)": 26.4
+    },
+    "Tipo de NEE": {
+      "concluintes (%)": 48.0,
+      "evadidos (%)": 67.2,
+      "diferença na mesma turma (p.p.)": 26.4
+    },
+    "Renda Familiar": {
+      "concluintes (%)": 18.6,
+      "evadidos (%)": 31.2,
+      "diferença na mesma turma (p.p.)": 10.5
+    },
+    "Cor / Raça": {
+      "concluintes (%)": 9.3,
+      "evadidos (%)": 15.5,
+      "diferença na mesma turma (p.p.)": 3.0
+    }
+  },
+  "shap_participacao_grupos_pct": {
+    "Curso e oferta": 42.8,
+    "Estudante": 33.2,
+    "Instituição": 24.1
+  },
+  "niveis_teste": {
+    "Baixo": {
+      "matrículas": 6682,
+      "evasao_observada_pct": 18.9,
+      "participação (%)": 31.3
+    },
+    "Médio": {
+      "matrículas": 10651,
+      "evasao_observada_pct": 45.9,
+      "participação (%)": 50.0
+    },
+    "Alto": {
+      "matrículas": 3982,
+      "evasao_observada_pct": 78.0,
+      "participação (%)": 18.7
+    }
+  },
+  "ambiente": {
+    "python": "3.14.10",
+    "catboost": "1.2.10",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1"
+  }
+}

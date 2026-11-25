@@ -1,0 +1,15 @@
+﻿atributo,grupo,matrículas,evadidos (%),ROC-AUC,revocação,falsos positivos
+Sexo,F,11431,39.892,0.77,0.689,0.269
+Sexo,M,9884,47.562,0.758,0.719,0.314
+Cor / Raça,Amarela,215,46.512,0.761,0.71,0.313
+Cor / Raça,Branca,7034,38.854,0.774,0.698,0.259
+Cor / Raça,Não declarada,2113,58.684,0.716,0.681,0.401
+Cor / Raça,Parda,9703,42.595,0.766,0.694,0.274
+Cor / Raça,Preta,2181,47.043,0.77,0.794,0.375
+Renda Familiar,"0,5<RFP<=1",4148,38.163,0.788,0.742,0.264
+Renda Familiar,"0<RFP<=0,5",6590,39.014,0.747,0.655,0.26
+Renda Familiar,"1,5<RFP<=2,5",1551,39.201,0.793,0.747,0.267
+Renda Familiar,"1<RFP<=1,5",2562,41.725,0.778,0.734,0.317
+Renda Familiar,"2,5<RFP<=3,5",536,34.328,0.771,0.728,0.293
+Renda Familiar,Não declarada,5192,57.858,0.74,0.705,0.371
+Renda Familiar,"RFP>3,5",736,32.88,0.804,0.719,0.229

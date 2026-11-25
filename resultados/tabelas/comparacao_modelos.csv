@@ -1,0 +1,5 @@
+﻿,ROC-AUC,AP,ROC-AUC dentro da unidade
+1. Sem modelo,0.5,0.4345,0.5
+2. Regra simples (taxa do tipo de oferta),0.6799,0.562,0.5551
+3. Regressão logística,0.7395,0.6794,0.585
+4. CatBoost (modelo final),0.7668,0.7097,0.6405
