@@ -14,7 +14,7 @@ Prova de conceito de um sistema de alerta precoce de evasão para equipes locais
 ## Estrutura
 
 ```
-EWS-EPT/
+ews-ept/
 ├── modelagem_evasao.ipynb   notebook: dados → modelo → avaliação → SHAP → exportação (roda no Google Colab)
 ├── requirements.txt         dependências do notebook
 ├── dados/                   microdados da PNP (não versionados; origem, download e SHA-256 no LEIA-ME)
@@ -35,7 +35,7 @@ níveis) estão explicadas no próprio notebook, cada uma na sua seção.
 ## Executar o notebook
 
 **Google Colab:** abra
-[modelagem_evasao.ipynb no Colab](https://colab.research.google.com/github/JeanSilveiraJS/EWS-EPT/blob/main/modelagem_evasao.ipynb)
+[modelagem_evasao.ipynb no Colab](https://colab.research.google.com/github/JeanSilveiraJS/ews-ept/blob/main/modelagem_evasao.ipynb)
 e use *Ambiente de execução → Executar tudo*. O notebook instala o CatBoost, baixa os dados (cerca de 64 MB), confere o
 SHA-256 e, ao final, oferece `resultados.zip` para download. Leva cerca de 10 minutos com a CPU padrão. Para usar o
 novo modelo no protótipo, extraia o zip na raiz do projeto, substituindo `resultados/`.
